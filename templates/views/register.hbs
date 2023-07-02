@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    {{>headerLinks}}
+  </head>
+  <body class="bg d-flex flex-column">
+    {{>navbar}}
+    <main class="container">
+      <div class="register">
+        <h1 class="heading">Register Yourself !</h1>
+        <br />
+        <form class="row g-3" action="/register" method="post">
+          <div class="col-md-6">
+            <label for="inputName4" class="form-label fw-bold text-white">Full
+              Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName4"
+              placeholder="Barry Alen"
+              name="fname"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputEmail4"
+              class="form-label fw-bold text-white"
+            >Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="abc123@gmail.com"
+              name="email"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputPassword4"
+              class="form-label fw-bold text-white"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="************"
+              name="password"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputCpassword4"
+              class="form-label fw-bold text-white"
+            >Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputCpassword4"
+              placeholder="************"
+              name="cpassword"
+            />
+          </div>
+          <div class="col-12">
+            <label
+              for="inputAddress"
+              class="form-label fw-bold text-white"
+            >Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+              name="address"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputCity"
+              class="form-label fw-bold text-white"
+            >City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="Kolkata"
+              name="city"
+            />
+          </div>
+          <div class="col-md-4">
+            <label
+              for="inputState"
+              class="form-label fw-bold text-white"
+            >State</label>
+            <select id="inputState" class="form-select" name="state">
+              <option selected>Choose...</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Nainital">Nainital</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label
+              for="inputZip"
+              class="form-label fw-bold text-white"
+            >Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputZip"
+              placeholder="700001"
+              name="zip"
+            />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-warning fw-bold">Register</button>
+          </div>
+          <div class="col-12 text-white fw-bold">
+            Already registered? <a class="text-decoration-none text-warning" href="/login">Log In</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    {{>footer}}
+  </body>
+</html>

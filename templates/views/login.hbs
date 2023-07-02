@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {{>headerLinks}}
+</head>
+<body class="bg d-flex flex-column">
+    {{>navbar}}
+    <main class="container">
+      <div class="login">
+        <h1 class="heading">Login Yourself !</h1>
+        <br />
+        <form class="row g-3" action="/login" method="post">
+          <div class="col-md-12">
+            <label
+              for="inputEmail4"
+              class="form-label fw-bold text-white"
+            >Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="abc123@gmail.com"
+              name="email"
+            />
+          </div>
+          <div class="col-md-12">
+            <label
+              for="inputPassword4"
+              class="form-label fw-bold text-white"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="************"
+              name="password"
+            />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-warning fw-bold">Login</button>
+          </div>
+          <div class="col-12 text-white fw-bold">
+            Not registered? <a class="text-decoration-none text-warning" href="/register">Create an account</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    {{>footer}}
+  </body>
+</html>
